@@ -22,6 +22,7 @@ defmodule GRPCStatsd.MixProject do
 
   defp package do
     %{
+      organization: "tubitv",
       maintainers: ["Bing Han"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/elixir-grpc/grpc-statsd"},
@@ -33,7 +34,7 @@ defmodule GRPCStatsd.MixProject do
   defp deps do
     [
       {:statix, ">= 0.0.0", optional: true},
-      {:grpc, ">= 0.0.0", optional: true},
+      {:grpc, ">= 0.0.0", organization: "tubitv", optional: true},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
